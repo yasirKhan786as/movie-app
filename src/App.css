@@ -1,0 +1,164 @@
+body{
+    overflow-x: hidden;
+}
+
+
+.nav-img img{
+    height: 70px;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    border-radius: 10px;
+}
+.home-div{
+    position:relative;
+    left: 20px;
+    top: 30px;
+}
+.home-div-h1{
+    width: 70%;
+}
+.home-div-input{
+    position: relative;
+    top: 10px;
+}
+.home-div-input input{
+    width: 40%;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 15px;
+    margin-right: 5px;
+}
+.home-div-input button{
+    width: 10%;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 15px;
+    margin-right: 5px;
+    font-size: medium;
+}
+@media (max-width: 768px) {
+    .home-div-input button{
+        width: 6rem;
+    }
+    .home-div-input input{
+        width: 14.5rem;
+    }
+}
+
+
+/* Cards */
+
+.card{
+   position: relative;;
+    height: 30rem;
+    width: 19rem;
+
+    border: 2px solid black;
+   
+    top: 3em;
+    left: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: black;
+
+}
+
+.card img{
+    height: 27rem;
+    width: 18rem;
+    border-radius: 10px;
+ 
+    
+}
+.card h3{
+    color: white;
+}
+.card-div{
+   display: flex;
+    flex-wrap: wrap;
+    gap: 5.5rem;
+    row-gap: 1rem;
+
+}
+
+.text-overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 1;
+}
+.card-unavailable{
+    position: relative;
+    top: 5rem;
+    left: 40%;
+}
+.no-line{
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+    .card{
+        height: 14rem;
+        width: 9rem;
+    }
+    .card-div{
+        gap: 3rem;
+        row-gap: 1rem;
+    }
+    .card img{
+        height: 12rem;
+        width: 8rem;
+    }
+    .text-overflow{
+        font-size: medium;
+    }
+}
+
+/* Single page */
+.single-box{
+    display: flex;
+}
+.single-img-box{
+    position: relative;
+    top: 2rem;
+    left: 20px;
+  
+}
+.single-img-box img{
+    height: 90vh;
+    border-radius: 10px;
+}
+.single-box-description{
+    position: relative;
+    top: 2rem;
+    left: 40px;
+}
+.single-box h2{
+ display: flex;
+ align-items: center;
+}
+.single-box h4{
+    font-weight: 400;
+    
+}
+
+@media (max-width:768px){
+    .single-box{
+        flex-direction: column;
+
+    }  
+   
+    .single-img-box img{
+        width: 90vw;
+        height: 70vh;
+        
+    }
+    .single-box-description{
+        margin-top: 1rem;
+        left: 20px;
+        width: 90vw;
+    }
+ 
+}
