@@ -19,7 +19,7 @@ function Single() {
   console.log(param);
   async function getSingleMovie() {
     const url = await axios.get(
-      `http://www.omdbapi.com/?apikey=367f41be&i=${param?.id}`
+      `https://www.omdbapi.com/?apikey=367f41be&i=${param?.id}`
     );
     setData(url?.data);
   }
